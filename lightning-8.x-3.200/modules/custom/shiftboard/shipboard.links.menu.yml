@@ -1,0 +1,15 @@
+shipboard.overview:
+  title: shipboard API Status
+  route_name: shipboard.overview
+  description: 'Configuration & information for the shipboard API integration.'
+  parent: system.admin_config_services
+
+shipboard.account_import:
+  title: account Import
+  route_name: shipboard.account_import
+  parent: shipboard.overview
+
+shipboard.configuration:
+  title: Configure
+  route_name: shipboard.configuration
+  parent: shipboard.overview

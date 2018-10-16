@@ -1,0 +1,29 @@
+shipboard.overview:
+  path: '/admin/config/services/shipboard'
+  defaults:
+    _controller: '\Drupal\shipboard\Controller\ShipboardOverviewController::showOverview'
+    _title: 'shipboard API Status Report'
+  requirements:
+    _permission: 'shipboard account import'
+  options:
+    _admin_route: TRUE
+
+shipboard.account_import:
+  path: '/admin/config/services/shipboard/account-import'
+  defaults:
+    _form: '\Drupal\shipboard\Form\ShipboardAccountImportForm'
+    _title: 'shipboard API: account Import'
+  requirements:
+    _permission: 'shipboard account import'
+  options:
+    _admin_route: TRUE
+
+shipboard.configuration:
+  path: '/admin/config/services/shipboard/config'
+  defaults:
+    _form: '\Drupal\shipboard\Form\ShipboardConfigurationForm'
+    _title: 'shipboard API Configuration'
+  requirements:
+    _permission: 'shipboard admin config'
+  options:
+    _admin_route: TRUE

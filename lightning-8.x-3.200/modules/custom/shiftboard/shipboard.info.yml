@@ -1,0 +1,14 @@
+name: Shipboard
+type: module
+description: "Shipboard Account Import"
+# core: 8.x
+package: Integrations
+dependencies:
+- key:key
+
+# Information added by Drupal.org packaging script on 2018-09-06
+version: '8.x-2.1'
+core: '8.x'
+project: 'Shipboard '
+
+

@@ -1,0 +1,14 @@
+shipboard.overview:
+  title: API Status
+  route_name: shipboard.overview
+  base_route: shipboard.overview
+
+shipboard.account_import:
+  title: account Import
+  route_name: shipboard.account_import
+  base_route: shipboard.overview
+
+shipboard.configuration:
+  title: Configure
+  route_name: shipboard.configuration
+  base_route: shipboard.overview

@@ -1,0 +1,48 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function shipboard_schema() {
+    $schema['shipboard_account_previous'] = [
+        'description' => 'Preserves the raw data downloaded from the shipboard API for comparison.',
+        'fields'      => [
+            'gid' => [
+                'description' => 'The primary unique ID for shipboard account data.',
+                'type'        => 'int',
+                'size'        => 'big',
+                'not null'    => TRUE,
+                'default'     => 0,
+            ],
+            'data' => [
+                'description' => 'The full data of the account.',
+                'type'        => 'blob',
+                'size'        => 'big',
+            ],
+        ],
+        'primary key' => ['gid'],
+    ];
+
+    $schema['shipboard_account_staging'] = [
+        'description' => 'Stores the raw data downloaded from the shipboard API.',
+        'fields'      => [
+            'gid' => [
+                'description' => 'The primary unique ID for shipboard account data.',
+                'type'        => 'int',
+                'size'        => 'big',
+                'not null'    => TRUE,
+                'default'     => 0,
+            ],
+            'data' => [
+                'description' => 'The full data of the account.',
+                'type'        => 'blob',
+                'size'        => 'big',
+            ],
+        ],
+        'primary key' => ['gid'],
+    ];
+
+    return $schema;
+}
