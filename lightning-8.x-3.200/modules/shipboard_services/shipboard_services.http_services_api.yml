@@ -1,0 +1,5 @@
+shipboard_services.contents:
+  title: "Shipboard - Contents Services API"
+  api_path: "src/api/content_services.yml"
+  config:
+    base_uri: "https://demo.ckan.org"

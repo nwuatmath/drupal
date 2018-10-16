@@ -1,0 +1,5 @@
+name: "[Shipboard] - Content Services API"
+apiVersion: "1.0"
+description: "Client wrapper for the Content Services API."
+imports:
+- "resources/contents/posts.yml"

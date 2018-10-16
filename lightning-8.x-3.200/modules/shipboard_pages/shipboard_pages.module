@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains shipboard_pages.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function shipboard_pages_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the shipboard_pages module.
+    case 'help.page.shipboard_pages':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('shipboard pages') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function shipboard_pages_theme() {
+  return [
+    'shipboard_pages' => [
+      'render element' => 'children',
+    ],
+  ];
+}

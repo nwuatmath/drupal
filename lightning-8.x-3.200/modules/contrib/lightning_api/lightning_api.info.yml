@@ -1,0 +1,17 @@
+name: 'Content API'
+# core: 8.x
+type: module
+package: Lightning
+description: 'Progressive decoupling? No problem.'
+dependencies:
+  - jsonapi
+  - openapi
+  - openapi_ui_redoc
+  - openapi_ui_swagger
+  - simple_oauth_extras
+
+# Information added by Drupal.org packaging script on 2018-08-31
+version: '8.x-2.7'
+core: '8.x'
+project: 'lightning_api'
+datestamp: 1535722384

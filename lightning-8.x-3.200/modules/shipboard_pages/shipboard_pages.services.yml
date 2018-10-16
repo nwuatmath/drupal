@@ -1,0 +1,4 @@
+services:
+  shipboard_services.http_client.contents:
+    parent: http_client_manager.client_base
+    arguments: ['shipboard_services.contents']

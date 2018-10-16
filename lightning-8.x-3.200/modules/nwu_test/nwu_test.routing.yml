@@ -1,0 +1,6 @@
+dino_says:
+    path: /the/dino/says/{count}
+    defaults:
+        _controller: Drupal\nwu_test\Controller\RoarController::roar
+    requirements:
+        _permission: 'access content'

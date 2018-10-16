@@ -1,0 +1,34 @@
+
+http_client_manager_shiftboard.find_posts:
+  path: 'shiftboard/find-posts/{postId}'
+  defaults:
+    _controller: '\Drupal\http_client_manager_shiftboard\Controller\shiftboardController::findPosts'
+    _title: 'Find posts'
+    postId: null
+  requirements:
+    _permission: 'access content'
+
+http_client_manager_shiftboard.find_posts.advanced:
+  path: 'shiftboard/find-posts-advanced/{postId}'
+  defaults:
+    _controller: '\Drupal\http_client_manager_shiftboard\Controller\shiftboardController::findPostsAdvanced'
+    _title: 'Find posts - Advanced'
+    postId: null
+  requirements:
+    _permission: 'access content'
+
+http_client_manager_shiftboard.create_post:
+  path: 'shiftboard/create-post'
+  defaults:
+    _controller: '\Drupal\http_client_manager_shiftboard\Controller\shiftboardController::createPost'
+    _title: 'Create post'
+  requirements:
+    _permission: 'access content'
+
+http_client_manager_shiftboard.create_post.advanced:
+  path: 'shiftboard/create-post-advanced'
+  defaults:
+    _controller: '\Drupal\http_client_manager_shiftboard\Controller\shiftboardController::createPostAdvanced'
+    _title: 'Create post - Advanced'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,57 @@
+{
+  "operations": {
+
+    "FindAccounts": {
+      "httpMethod": "GET",
+      "uri": "",
+      "summary": "Find accounts",
+      "responseModel": "AccountList"
+    },
+    "FindAccount": {
+      "httpMethod": "GET",
+      "uri": "",
+      "summary": "Find accounts",
+      "parameters": {
+        "postId": {
+          "location": "uri",
+          "description": "Filter accounts by id",
+          "required": true,
+          "type": "integer"
+        }
+      },
+      "responseModel": "Account"
+    }
+
+  },
+  "models": {
+
+    "Account": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "location": "json",
+          "type": "integer"
+        },
+        "id": {
+          "location": "json",
+          "type": "integer"
+        },
+        "title": {
+          "location": "json",
+          "type": "string"
+        },
+        "body": {
+          "location": "json",
+          "type": "string"
+        }
+      }
+    },
+    "PostList": {
+      "location": "json",
+      "type": "array",
+      "items": {
+        "$ref": "Post"
+      }
+    }
+  }
+}

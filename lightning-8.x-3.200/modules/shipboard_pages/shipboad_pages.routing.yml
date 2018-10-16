@@ -1,0 +1,7 @@
+shipboad_pages.settings:
+  path: '/admin/config/shipboard/pages'
+  defaults:
+    _controller: 'Drupal\shipboad_pages\Controller\ShipboardPagesController::posts'
+  requirements:
+    _permission: 'administer site configuration'
+

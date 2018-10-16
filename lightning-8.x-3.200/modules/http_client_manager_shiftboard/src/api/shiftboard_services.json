@@ -1,0 +1,8 @@
+{
+  "name": "shiftboardServicesApi",
+  "apiVersion": "2.0",
+  "description": "Client wrapper for the shiftboard Services API.",
+  "imports" : [
+    "resources/posts.json"
+  ]
+}

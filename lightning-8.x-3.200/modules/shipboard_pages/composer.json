@@ -1,0 +1,14 @@
+{
+  "name": "drupal/shipboard_pages",
+  "type": "drupal-module",
+  "description": "shipboard pages",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/shipboard_pages",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/shipboard_pages",
+    "source": "http://cgit.drupalcode.org/shipboard_pages"
+  },
+  "require": { }
+}

@@ -1,0 +1,78 @@
+operations:
+  GetPosts:
+    httpMethod: "GET"
+    uri: "posts"
+    summary: "Gets the available Posts. It's possible to define a limit and a sorting order."
+    parameters:
+      limit:
+        location: "query"
+        description: "The number of posts to be retrieved."
+        type: "integer"
+        required: true
+        default: 5
+      sort:
+        location: "query"
+        description: "The sorting order."
+        type: "string"
+        required: true
+        default: "desc"
+    responseModel: "PostsList"
+
+  GetPostComments:
+    httpMethod: "GET"
+    uri: "posts/{postId}/comments"
+    summary: "Gets a list of all the comments related to the given Post."
+    parameters:
+      postId:
+        location: "uri"
+        description: "The Post ID."
+        type: "integer"
+        required: true
+    responseModel: "CommentsList"
+
+models:
+  PostsList:
+    type: "array"
+    location: "json"
+    items:
+      "$ref": "Post"
+
+  Post:
+    type: "object"
+    location: "json"
+    properties:
+      userId:
+        location: "json"
+        type: "integer"
+      id:
+        location: "json"
+        type: "integer"
+      title:
+        location: "json"
+        type: "string"
+      text:
+        location: "json"
+        type: "string"
+
+  CommentsList:
+    type: "array"
+    location: "json"
+    items:
+      "$ref": "Comment"
+
+  Comment:
+    type: "object"
+    location: "json"
+    properties:
+      userId:
+        location: "json"
+        type: "integer"
+      id:
+        location: "json"
+        type: "integer"
+      title:
+        location: "json"
+        type: "string"
+      text:
+        location: "json"
+        type: "string"

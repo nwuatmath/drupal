@@ -1,0 +1,14 @@
+{
+  "name": "drupal/shipboard_services",
+  "type": "drupal-module",
+  "description": "Integration with the Shipboard API",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/shipboard_services",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/shipboard_services",
+    "source": "http://cgit.drupalcode.org/shipboard_services"
+  },
+  "require": { }
+}

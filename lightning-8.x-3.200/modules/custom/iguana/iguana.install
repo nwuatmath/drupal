@@ -1,0 +1,48 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Implements hook_schema().
+ */
+function iguana_schema() {
+    $schema['iguana_tea_previous'] = [
+        'description' => 'Preserves the raw data downloaded from the Iguana API for comparison.',
+        'fields'      => [
+            'gid' => [
+                'description' => 'The primary unique ID for Iguana Tea data.',
+                'type'        => 'int',
+                'size'        => 'big',
+                'not null'    => TRUE,
+                'default'     => 0,
+            ],
+            'data' => [
+                'description' => 'The full data of the Tea.',
+                'type'        => 'blob',
+                'size'        => 'big',
+            ],
+        ],
+        'primary key' => ['gid'],
+    ];
+
+    $schema['iguana_tea_staging'] = [
+        'description' => 'Stores the raw data downloaded from the Iguana API.',
+        'fields'      => [
+            'gid' => [
+                'description' => 'The primary unique ID for Iguana Tea data.',
+                'type'        => 'int',
+                'size'        => 'big',
+                'not null'    => TRUE,
+                'default'     => 0,
+            ],
+            'data' => [
+                'description' => 'The full data of the Tea.',
+                'type'        => 'blob',
+                'size'        => 'big',
+            ],
+        ],
+        'primary key' => ['gid'],
+    ];
+
+    return $schema;
+}

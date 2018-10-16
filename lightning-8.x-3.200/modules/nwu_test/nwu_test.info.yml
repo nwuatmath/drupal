@@ -1,0 +1,5 @@
+name: nwu test
+type: module
+description: "test"
+package: Sample
+core: 8.x

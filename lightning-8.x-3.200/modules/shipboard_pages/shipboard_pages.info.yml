@@ -1,0 +1,5 @@
+name: 'shipboard_pages'
+type: module
+description: 'shipboard pages'
+core: 8.x
+package: 'Integrations'

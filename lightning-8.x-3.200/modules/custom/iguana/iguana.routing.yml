@@ -1,0 +1,29 @@
+iguana.overview:
+  path: '/admin/config/services/iguana'
+  defaults:
+    _controller: '\Drupal\iguana\Controller\IguanaOverviewController::showOverview'
+    _title: 'Iguana API Status Report'
+  requirements:
+    _permission: 'iguana tea import'
+  options:
+    _admin_route: TRUE
+
+iguana.tea_import:
+  path: '/admin/config/services/iguana/tea-import'
+  defaults:
+    _form: '\Drupal\iguana\Form\IguanaTeaImportForm'
+    _title: 'Iguana API: Tea Import'
+  requirements:
+    _permission: 'iguana tea import'
+  options:
+    _admin_route: TRUE
+
+iguana.configuration:
+  path: '/admin/config/services/iguana/config'
+  defaults:
+    _form: '\Drupal\iguana\Form\IguanaConfigurationForm'
+    _title: 'Iguana API Configuration'
+  requirements:
+    _permission: 'iguana admin config'
+  options:
+    _admin_route: TRUE

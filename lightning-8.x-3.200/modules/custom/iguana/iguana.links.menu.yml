@@ -1,0 +1,15 @@
+iguana.overview:
+  title: Iguana API Status
+  route_name: iguana.overview
+  description: 'Configuration & information for the Iguana API integration.'
+  parent: system.admin_config_services
+
+iguana.tea_import:
+  title: Tea Import
+  route_name: iguana.tea_import
+  parent: iguana.overview
+
+iguana.configuration:
+  title: Configure
+  route_name: iguana.configuration
+  parent: iguana.overview

@@ -1,0 +1,11 @@
+shiftboard_services:
+  title: "[JSON] - shiftboard Services API"
+  api_path: "src/api/shiftboard_services.json"
+  config:
+    base_uri: "https://api.shiftdata.com/servola/api/api.cgi?&access_key_id=15af4df9-da35-4894-b259-606166e33e90&jsonrpc=2.0&id=1&method=account.list&params=e30K&signature=OLVhDWCiPxprE9i54m4rzGwTSuU%3D"
+
+shiftboard_services_yaml:
+  title: "[YAML] - shiftboard Services fake API"
+  api_path: "src/api/shiftboard_services.yml"
+  config:
+    base_uri: "https://api.shiftdata.com/servola/api/api.cgi?&access_key_id=15af4df9-da35-4894-b259-606166e33e90&jsonrpc=2.0&id=1&method=account.list&params=e30K&signature=OLVhDWCiPxprE9i54m4rzGwTSuU%3D"

@@ -1,0 +1,14 @@
+iguana.overview:
+  title: API Status
+  route_name: iguana.overview
+  base_route: iguana.overview
+
+iguana.tea_import:
+  title: Tea Import
+  route_name: iguana.tea_import
+  base_route: iguana.overview
+
+iguana.configuration:
+  title: Configure
+  route_name: iguana.configuration
+  base_route: iguana.overview
